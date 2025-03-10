@@ -1,0 +1,41 @@
+Introduction :
+The analysis of leads data is crucial for businesses to understand customer behavior, preferences, and conversion patterns. This report summarizes the key findings from the analysis of leads data for X Education and implementation of Logistic Regression model to predict lead conversion that helps in highlighting the technical and business aspects of the analysis.
+Methodology :
+The analysis began with loading data from Leads.csv, followed by data cleaning and preprocessing using key Python libraries such as NumPy, Pandas, Matplotlib, and Seaborn for efficient data manipulation and visualization.
+The data cleaning process involved:
+•
+Removing duplicates and dropping irrelevant columns.
+•
+Handling missing values through appropriate imputation techniques.
+•
+Detecting and removing outliers using standardization techniques.
+•
+Checking data balance to ensure a fair modeling approach.
+As per the assigned task, a Logistic Regression model was implemented to predict lead conversion. To enhance model performance and prevent overfitting, hyperparameter tuning was conducted, resulting in an optimized and well-generalized model.
+Key Findings
+The analysis revealed that the data shape is (9240, 37), with key columns including Prospect ID, Lead Number, Lead Origin, Lead Source, Converted, Total Visits, and others. Some major insights are:
+•
+Top Lead Sources: The primary sources of leads are Google, Direct Traffic, and Olark Chat, all of which show a strong conversion rate. Additionally, leads acquired through Referrals and the Welingak Website exhibit exceptionally high conversion rates.
+•
+Top Lead Origins: The most common lead origins are Landing Page Submissions, API, and Lead Add Forms, with Lead Add Forms having the highest conversion rate.
+•
+Top User Activities: The most frequent last activities of leads include Email Opened, SMS Sent, and Olark Chat Conversations, with SMS Sent leading to the highest conversion rate.
+•
+Geographic Insights: A significant majority of leads originate from India.
+•
+Employment Status: While most leads come from unemployed individuals, working professionals demonstrate the highest conversion rates.
+•
+Top 3 features: Features that influence the lead conversion at most are: Lead Origin, Lead Source and Last activity
+
+Business Implications
+The analysis has significant business implications, including targeted marketing, resource allocation, and continuous monitoring. The findings suggest focusing on high-performing lead sources for marketing efforts, tailoring campaigns based on customer behavior insights, and allocating resources to optimize lead generation from effective channels. The analysis also recommends implementing a data-driven approach to refine marketing strategies, regularly updating and analyzing lead data to adapt to market changes, and establishing KPIs to monitor lead performance and conversion rates.
+
+Recommendations
+1. Implement a data-driven approach to refine marketing strategies.
+2. Regularly update and analyze lead data to adapt to market changes.
+3. Establish KPIs to monitor lead performance and conversion rates.
+4. Focus on high-performing lead sources for marketing efforts.
+5. Tailor campaigns based on customer behaviour insights.
+6. Allocate resources to optimize lead generation from effective channels.
+Conclusion
+The logistic regression model we developed proved to be a superior lead scoring model. In nearly 82% of cases, it correctly assigns a higher lead score to leads that will convert compared to a lead who will not convert. By using this lead scoring model, the sales team can increase their conversion rate to 82% by focusing on the quality features that we get from the model.
